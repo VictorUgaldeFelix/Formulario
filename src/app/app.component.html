@@ -1,0 +1,109 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+      <div class="container__cover">
+          <div class="cover">
+              <div class="text">
+                  <h1>Fundación Loto Tres</h1>
+                  <p>Somos una organización sin fines de lucro cuyo objetivo más importante es expandir nuestra causa en favor de los que menos tienen.</p>
+                    <p> Asi mismo apoyar, capacitar y proporcionar recursos de alta calidad a nuestra comunidad en un entorno seguro. Nuestro éxito no se mide en términos de riqueza o márgenes de ganancia, sino por el valor que brindamos a aquellos grupos vulnerables a quienes atendemos.  </p>
+                  <input type="button" value="DONAR">
+              </div>
+
+              <div class="svg">
+                  <img src="https://fondify-media.s3.amazonaws.com/organizations/covers/2021-07-12/picture_PL6RTId.png" alt="">
+              </div>
+          </div>
+      </div>
+
+      <div class="container">  
+        <form  id="contact" action="enviar.php" method="post">
+          <h3>Contacto</h3>
+          <h4>Contactanos para mas información o si deseas recibir notificaciones sobre algun tema en especifico</h4>
+          <fieldset>
+            <input placeholder="Nombre" type="text" tabindex="1" required name="nombre" autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Apellido Paterno" type="text" tabindex="1" name="apellidopaterno" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Apellido Materno" type="text" tabindex="1" name="apellidomaterno" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Tu correo electronico" type="email" tabindex="2" name="correoelectronico" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Tu numero telefonico" type="tel" tabindex="3" name="numerotelefonico" required>
+          </fieldset>
+          <fieldset>
+            <select class="custom-select" id="validarTema" name="validarTema" required>
+                <option selected disabled value="">Selecciona tema de interes</option>
+                <option value="Problema con acceso a Web">Actividades</option>
+                <option value="Propuesta de colaboración">Donaciones</option>
+                <option value="Eliminar mi usuario de la Web">Testimoniales</option>
+                <option value="Otras cuestiones">Difusión</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Escribe el mensaje que deseas mandar" tabindex="5" name="mensaje" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" href="/src/app/validacion/validacion-list/validacion-list.component.html">Enviar</button>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="reset" id="contact-submit" data-submit="...Sending">Limpiar</button>
+          </fieldset>
+        </form>
+       
+        
+      </div>
+
+<footer data-aos="fade-left" class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a> Celular: (55) 23089192</a></li>
+          <li><a>Local: (55) 5938 0797</a></li>
+          <li><a>Correo Electronico: lototres@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="/auth/actividades">Actividades</a></li>
+          <li><a href="/auth/donaciones">Donaciones</a></li>
+          <li><a href="/auth/testimoniales">Testimoniales</a></li>
+          <li><a href="/auth/difusion">Difusión</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Te invitamos a seguirnos en nuestras redes sociales</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/fundacionlototresac"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UC1Eg93TeFfm2BLNo4gwNGQw"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="https://twitter.com/LotoTres"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/explore/locations/691734080880963/fundacion-loto-tres-ac/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Hospedaje y Dominio donado por &copy;NEUBOX INTERNET</h4>
+      </div>
+    </div>
+  </div>
+</footer>
